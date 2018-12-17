@@ -163,6 +163,10 @@ function Input()
 		var str_result = '';
 		for (var i = 0; i < arrNum.length; i++)
 		{
+			var nctArr = arrNum[i].split('');
+		        if(nctArr.length == 2){
+				arrNum[i] = "0"+arrNum[i];
+		        }
 			if ((i % 10 == 0) && (i != 0))
 				str_result = str_result + "\n" + arrNum[i] + ', ';
 			else if ( i % 10 == 9)
