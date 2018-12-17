@@ -2,10 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Number BaseBall</title>	
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
+
 
 	<form name="form" id="mainForm">
 		<script type="text/javascript" src="src.js"></script>
@@ -19,13 +16,13 @@
 				<div id="menu" style="height:162px; width:250px; float:left;">
 					<label for="html">Input</label> 
 					<input type="Text" id="txt_Input" size=13 maxlength="3">					
-					<button type="button" class="btn" id="btn_Set" value="Add" onclick="Input()">
+					<input type="button" id="btn_Set" value="Add" onclick="Input()">
 					<br>
 					<input type="Text" id = "txt_Strike" size=1 maxlength="1">
 					<label for="html">Strike</label> 
 					<input type="Text" id = "txt_Ball" size=1  maxlength="1">
 					<label for="html">Ball</label> 
-					<button type="button" class="btn" id="btn_Reset" value="Clear" onclick="txtClear()" onkeypress="InputNumber(event)">
+					<input type="button" id="btn_Reset" value="Clear" onclick="txtClear()" onkeypress="InputNumber(event)">
 					<br>
 					<br>					
 					<label for="html">Probability : </label>
