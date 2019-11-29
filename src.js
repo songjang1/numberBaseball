@@ -23,7 +23,16 @@ function Input()
 
 		if ((str1 == '') || (str2 == '') || (str3 == ''))
 		{
-			alert("Three-digit number was not entered.");
+			alert("숫자를 입력하세요");
+			mainForm.txt_Strike.value = "";
+			mainForm.txt_Ball.value = "";
+			mainForm.txt_Input.value = "";
+			return;	
+		}
+		
+		if ((str1 == '0') || (str2 == '0') || (str3 == '0'))
+		{
+			alert("0은 없어요");
 			mainForm.txt_Strike.value = "";
 			mainForm.txt_Ball.value = "";
 			mainForm.txt_Input.value = "";
@@ -32,7 +41,7 @@ function Input()
 
 		if ((str1 == str2) || (str2 == str3) || (str1 == str3))
 		{
-			alert("Same number can not be used.");
+			alert("같은 숫자는 안돼요");
 			mainForm.txt_Strike.value = '';
 			mainForm.txt_Ball.value = '';
 			mainForm.txt_Input.value = '';
