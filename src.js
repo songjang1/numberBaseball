@@ -210,12 +210,14 @@ function txtClear()
 	    var fullStr = String(nCnt);
 	    var nctArr = fullStr.split('');
 	    if(nctArr.length == 2){
-	        fullStr = "0"+fullStr;
+	        continue;
 	    }
 		var str1 = Number(fullStr.substr(0, 1));
 		var str2 = Number(fullStr.substr(1, 1));
 		var str3 = Number(fullStr.substr(2, 1));
-
+		if(str1=="0" || str2=="0" || str3=="0"){
+		   continue;
+	   	}
 		if ((str1 != str2) && (str2 != str3) && (str1 != str3))
 			arrNum[arrNum.length] = nCnt;					
 	}
